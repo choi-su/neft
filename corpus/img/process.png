@@ -1,0 +1,249 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="naver-site-verification" content="2e07a940066ec390185f93eb3a72c8380258e768" />
+    <title>알맹이 코퍼스</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({            
+            tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}            
+        });
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <script>
+        tailwind.config = {
+        theme: {
+            extend: {
+            colors: {
+                        "primary": "#2563eb",
+                    
+                        "secondary": "#d8001c",
+                                    
+                        "accent": "#a8ffc2",
+                                
+                        "neutral": "#374151",
+                                
+                        "base-100": "#fff",
+
+                        "base-200" : "#EBEBEB",
+                                
+                        "info": "#849CF6",
+                                
+                        "success": "#4DEA9C",
+                                
+                        "warning": "#E0950B",
+                                
+                        "error": "#F3727D",
+                    },
+                    container:{
+                        screens:{
+                            "2xl":"768px"
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+    
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+body{
+    font-family:'Pretendard-Regular';
+}
+.mockup-code::-webkit-scrollbar{
+    width: 5px;        
+    height: 8px;
+    background-color: transparent;
+}
+.mockup-code::-webkit-scrollbar-thumb{
+    width: 5px;        
+    height: 8px;
+    background-color: #fff;
+    border-radius:10px;
+}
+</style>
+</head>
+
+<body>
+<div class="navbar bg-primary fixed top-0 z-50">
+  <div class="navbar-start">
+
+  </div>
+  <div class="navbar-center">
+    <a class="btn btn-ghost normal-case text-xl text-base-100 tracking-widest">
+<svg class="mr-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <path id="합치기_1" data-name="합치기 1" d="M-2864.659,3066.8a4.335,4.335,0,0,1,0-6.132l15.329-15.329a4.336,4.336,0,0,1,6.132,0,4.327,4.327,0,0,1,1.258,3.383c0,.042,0,.083,0,.126v14.742a4.335,4.335,0,0,1-4.335,4.335,4.335,4.335,0,0,1-4.335-4.335v-4.708l-7.918,7.918a4.325,4.325,0,0,1-3.066,1.27A4.322,4.322,0,0,1-2864.659,3066.8Z" transform="translate(2865.929 -3044.071)" fill="#fff"/>
+</svg>
+
+
+        AlmengE corpus
+    </a>
+  </div>
+  <div class="navbar-end">
+
+  </div>
+</div>
+    <div class="md:container mx-auto md:py-8 md:px-0 p-4 mt-16">
+        <div class=" mb-8">
+            <div class="flex flex-col justify-center items-start font-bold ">
+               <div class="mb-2 text-3xl">
+                   #자연어처리 #텍스트마이닝 #머신러닝 #딥러닝
+               </div> 
+               <div class="text-lg font-medium ">
+                    #NLP #Textmining #MachineLearning #DeepLearning
+               </div>
+            </div>
+        </div>
+
+        <div class="divider"></div> 
+        <div class="text-2xl font-bold mb-4">알맹이 말뭉치 다운로드</div>
+        <div class="mb-4 leading-10 text-lg flex items-center">
+            <a class="btn btn-active gap-2" style="text-transform:lowercase" href="/download.php">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75l3 3m0 0l3-3m-3 3v-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                합성어 + 신조어 v1.0
+            </a> 
+        </div>
+        <div class="flex gap-2 mb-4">
+            <div class="badge badge-md bg-primary border-none rounded-none flex-none w-11" >v1.0</div> 
+            <div class="">
+                AlmengE_corpus_v1_0.tar.gz - 580,840 words (UTF8 encoded file)<br>
+                - 학습된 뉴스 기사 수집 데이터<br>
+                - 재학습된 위키피디아 데이터
+            </div> 
+        </div>
+        <div class="flex gap-2 mb-4">
+            <div class="badge badge-md bg-primary border-none rounded-none flex-none w-11" >v1.1</div> 
+            <div class="">
+                AlmengE_corpus_v1_1.tar.gz - 04월 28일 배포 예정<br>
+                - 학습된 뉴스 기사 수집 데이터<br>
+                - 재학습된 위키피디아 데이터<br>
+                - 재학습된 KCC 말뭉치 데이터<br>
+            </div> 
+        </div>
+
+        <div class="divider"></div> 
+        <div class="text-2xl font-bold mb-4">알맹이 말뭉치란?</div>
+        <div class="mb-4 leading-10 text-lg">
+        기존의 말뭉치는 문장 또는 어절 형태로 나누어 제공하는 데이터가 대부분이지만 알맹이 말뭉치는 합성어와 신조어에 초점을 두고 AI 학습을 통해 수집한 데이터입니다. 대부분 문장 형태로 제공하는 일반적인 말뭉치와는 차이가 있습니다. 기존의 한국어 형태소 분석기의 명사 추출에서 뚜렷하게 보이는 오류는 아래와 같습니다.
+        </div>
+        <div class="bg-base-200 rounded-tl-3xl rounded-br-3xl mb-8">
+            <div class="flex flex-col justify-center items-start px-4 py-4 text-2xl font-bold ">
+               <div class="text-lg font-medium flex flex-col items-start">
+                    <p>'강남역사거리'  =>  ['강남', '역사', '거리']</p>
+                    <p>합성어에서의 분석 오류</p>
+                    <br>
+                    <p>'건강기능식품협회'  =>  ['건강', '기능', '식품', '협회']</p>
+                    <p>고유명사에서의 분석 오류</p>
+                    <br>
+                    <p>'갑분싸'  =>  ['갑']</p>
+                    <p>신조어에서의 분석 오류</p>
+                    <br>
+                    <p>'아이오아이'  =>  ['아이오', '아이']</p>
+                    <p>신조어에서의 분석 오류</p>
+               </div>
+            </div>
+        </div>   
+        <div class="mb-4 leading-10 text-lg">
+        알맹이 말뭉치는 위 오류를 최소화하기 위하여 AI 학습을 통하여 보다 정확한 명사 형태의 데이터를 수집하고 제공하고자 합니다.
+        </div>
+        <div class="flex justify-center mb-4">
+            <img src="./img/progress_fix_2.png" width="100%" alt="">
+        </div> 
+
+        <div class="mb-4 leading-10 text-lg">
+            <span>알맹이 말뭉치는 크게 4가지 단계의 학습 과정을 통하여 만들어집니다</span>
+            <ol class="list-decimal list-inside">
+                <li>데이터 투입 - 기사 제목과 본문 데이터를 투입합니다.</li>
+                <li>응집확률 추출 - 투입한 데이터들의 응집확률을 계산합니다.</li>
+                <li>비지도 학습 - 기사 제목과 본문 데이터를 투입합니다.</li>
+                <li>데이터 검수 - 찾아낸 데이터에서 합성어와 신조어를 수집해 수기로 데이터 검수를 진행합니다.</li>
+            </ol>
+        </div>
+        <img src="./img/almenge_progress_big.png" width="100%" alt="">
+        <div class="text-center mb-8 font-black">데이터가 수집되는 과정</div>
+
+        <div class="mb-4 leading-10 text-lg">
+            실제로 다음의 기사를 학습한 데이터를 보자면
+        </div>
+        <div class="bg-base-200 rounded-tl-3xl rounded-br-3xl mb-8">
+            <div class="flex flex-col justify-center items-start px-4 py-4 text-2xl font-bold">
+               <div class="text-lg font-medium flex flex-col items-start w-full">
+                    <p>굿즈가 뭐길래…맥도날드X뉴진스 콜라보 '뉴진스 버거' 열풍</p>
+                    <a class="text-primary break-all" href="https://n.news.naver.com/mnews/article/088/0000803531?sid=103" target="_blank">https://n.news.naver.com/mnews/article/088/0000803531?sid=103</a>
+                    <p>(하단의 명사들은 전처리된 데이터)<p>
+                    <p>굿즈 - 1.0</p>
+                    <p>뭐길 - None</p>
+                    <p>맥도날드X뉴진스 - None</p>
+                    <p>뉴진스 - 1.0</p>
+                    <p>맥도날드 - 0.95341950199441</p>
+                    <p>콜라보 - 1.0</p>
+                    <p>버거 - 1.0</p>
+               </div>
+            </div>
+        </div>  
+        <div class="mb-4 leading-10 text-lg">
+        "맥도날드"와 "콜라보" 같은 외래어도 수집되었으며 "뉴진스" 같은 신조어도 하나의 명사 형태로 수집됩니다.
+        </div>
+        <div class="divider"></div> 
+        <div class="text-2xl font-bold mb-4">수집한 한국어 말뭉치</div>
+        <div class="mb-4 leading-10 text-lg">
+        알맹이 말뭉치는 자체 뉴스 기사 수집 이외에도 웹상에서 존재하는 한국어 말뭉치 데이터를 수집했습니다. 수집한 말뭉치 데이터를 알맹이 AI에서 학습된 데이터와 대조 및 이를 재학습하여 합성어와 신조어를 수집했습니다.
+        </div>
+        <div class="bg-base-200 rounded-tl-3xl rounded-br-3xl mb-8">
+            <div class="flex flex-col justify-center items-start px-4 py-4 text-2xl font-bold ">
+               <div class="text-lg font-medium flex flex-col items-start">
+                    <p>KCC- <a class="text-primary break-all" href="#">http://nlp.kookmin.ac.kr/kcc/</a><p>
+                    <p>위키피디아 - <a class="text-primary break-all" href="#">https://ko.wikipedia.org/wiki/</a><p>
+               </div>
+            </div>
+        </div>   
+        <div class="mb-4 leading-10 text-lg">
+        궁극적으로는 인터넷에 존재하는 접근 가능한 모든 데이터를 이용하여 학습을 진행할 것입니다. 이를 통해 알맹이 말뭉치를 꾸준히 발전시키어 대한민국에 존재하는 모든 신조어 및 합성어를 저장한 데이터베이스를 구축하는 것이 우리의 목표입니다.
+        </div>
+        <img src="./img/almenge_3.png" width="100%"/>
+        <div class="divider"></div> 
+        <div class="text-2xl font-bold mb-4">알맹이 연구/개발</div>
+        <div class="mb-4 leading-10 text-lg">
+            저희 알맹이 서비스는 <a class="text-primary break-all" href="https://almenge.com">almenge.com</a>에서 사용자에게 현재 가장 이슈가 되고 있는 주제가 무엇인지, 그 주제의 키워드가 무엇인지를 제공하고자 합니다. 더 나아가 깨끗한 댓글문화를 선도하기 위하여 비속어 말뭉치를 만들어 수많은 커뮤니티에서 필터링으로 사용할 수 있도록 하여 도를 넘는 비속어 사용을 사전에 차단함으로써 신중한 댓글문화를 만들고자 합니다.
+        </div>
+
+        <div class="divider"></div> 
+        <div class="text-2xl font-bold mb-4">ROAD MAP</div>
+        <div class="text-xl font-bold mb-4">1. 알맹이 말뭉치 DB 상시 업데이트</div>
+        <div class="mb-4 leading-10 text-lg">
+            인터넷에 존재하는 접근 가능한 모든 데이터를 AI 학습 통해 합성어와 신조어를 수집
+        </div>
+        <div class="text-xl font-bold mb-4">2. 알맹이AI를 활용한 실시간 키워드 웹사이트</div>
+        <div class="mb-4 leading-10 text-lg">
+            뉴스에 기반하여 실시간 키워드를 제공하는 웹사이트 오픈 예정
+        </div>
+        <div class="text-xl font-bold mb-4">3. 알맹이를 활용한 클린 댓글 문화 캠페인</div>
+        <div class="mb-4 leading-10 text-lg">
+            인터넷상의 비속어를 수집하여 필터링이 필요한 집단에 공유
+        </div>
+        <div class="divider"></div> 
+        <div class="text-2xl font-bold mb-4">라이센스</div>
+        <div class="mb-4 leading-10 text-lg">
+            알맹이 말뭉치는 누구나 자유롭게 사용 가능합니다.<br>
+            문의 사항은 contact@almenge.com로 문의 바랍니다.<br>
+            <br>
+            &copy; Copyright 2021-2023, AlmengE.
+        </div>
+    </div>
+</body>
+
+</html>
